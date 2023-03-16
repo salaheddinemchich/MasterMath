@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="489.0" prefWidth="755.0" styleClass="bodybg" stylesheets="@FXMLDocument.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.CalculationController">
+   <children>
+      <Button fx:id="goback" layoutX="7.0" layoutY="8.0" mnemonicParsing="false" onAction="#go_back" prefHeight="35.0" prefWidth="94.0" styleClass="button_style" stylesheets="@FXMLDocument.css" text="Go Back" textFill="#e48006">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <style>
+            -fx-background-radius: 10px;
+        </style>
+      </Button>
+      <Label layoutX="294.0" layoutY="7.0" text="Calculation" textFill="#e48006">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="addition" fitHeight="150.0" fitWidth="200.0" layoutX="101.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs/addition-and-s20-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="substraction" fitHeight="150.0" fitWidth="200.0" layoutX="91.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs/addition-and-subtracct-png-1280_720-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="multiplication" fitHeight="150.0" fitWidth="200.0" layoutX="493.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs/student-cartoon-multiply-delete-sign-vector-illustration-129605098-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="division" fitHeight="169.0" fitWidth="103.0" layoutX="540.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs/kisspng-multiplication-sign-plus-and-minus-signs-divisions-5c02c843143da7.3175562815436862110829-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="random_img" fitHeight="150.0" fitWidth="200.0" layoutX="303.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs/math-challenge-free-math-challenge-pro-mental-challenge-kid-math-mathematics-7d0feb8222d7188ea6dacc3f96d4d867.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="319.0" layoutY="288.0" text="Random" textFill="#ebfc07">
+         <font>
+            <Font name="Bauhaus 93" size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

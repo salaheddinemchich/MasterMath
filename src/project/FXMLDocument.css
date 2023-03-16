@@ -1,0 +1,17 @@
+
+.bodybg{
+ -fx-background-image: url('imgs/bg.jpg');
+ -fx-background-size: 100% 100%;
+}
+.button_style{
+    -fx-border-color: C09247;
+    -fx-border-width: 5px;
+    -fx-border-radius: 10px;
+}
+
+.pane_border1{
+    -fx-border-color: CAB387;
+    -fx-border-width: 5px;
+}
+
+

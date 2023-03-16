@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="493.0" prefWidth="774.0" styleClass="bodybg" stylesheets="@FXMLDocument.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.BoardController">
+   <children>
+      <HBox alignment="BOTTOM_CENTER" layoutX="-8.0" prefHeight="52.0" prefWidth="763.0" spacing="10.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-8.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="whiteChalk" alignment="CENTER" minHeight="10.0" mnemonicParsing="false" onAction="#chalkClicked" prefHeight="10.0" prefWidth="70.0" style="-fx-background-color: white;" />
+            <Button fx:id="redChalk" alignment="CENTER" minHeight="10.0" mnemonicParsing="false" onAction="#chalkClicked" prefHeight="10.0" prefWidth="70.0" style="-fx-background-color: red;" />
+            <Button fx:id="greenChalk" alignment="CENTER" minHeight="10.0" mnemonicParsing="false" onAction="#chalkClicked" prefHeight="10.0" prefWidth="70.0" style="-fx-background-color: #32a852;" />
+            <Button fx:id="blueChalk" alignment="CENTER" minHeight="10.0" mnemonicParsing="false" onAction="#chalkClicked" prefHeight="10.0" prefWidth="70.0" style="-fx-background-color: #2482c9;" />
+            <Button fx:id="yellowChalk" alignment="CENTER" minHeight="10.0" mnemonicParsing="false" onAction="#chalkClicked" prefHeight="10.0" prefWidth="70.0" style="-fx-background-color: #d9bd0b;" />
+            <Button fx:id="errase" alignment="CENTER" minHeight="10.0" mnemonicParsing="false" onAction="#chalkClicked" prefHeight="35.0" prefWidth="106.0" style="-fx-background-color: black;">
+               <graphic>
+                  <ImageView fitHeight="143.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@imgs/pngegg%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <Canvas fx:id="canvas" height="441.0" width="774.0" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ImageView fx:id="exit" fitHeight="52.0" fitWidth="70.0" layoutX="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imgs/favpng_button.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

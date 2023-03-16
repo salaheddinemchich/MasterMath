@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootpane" prefHeight="489" prefWidth="755.0" styleClass="bodybg" stylesheets="@../FXMLDocument.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.Comapre_Numbers.Level2Controller">
+   <children>
+      <ImageView fitHeight="191.0" fitWidth="97.0" layoutX="24.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/symbols/pngkey.com-question-mark-emoji-png-6187799.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="error_image" fitHeight="150.0" fitWidth="133.0" layoutX="642.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/pngtree-cartoon-hand-drawn-punctuation-mark-exclamation-mark-image_1355816-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="next_button" fitHeight="69.0" fitWidth="66.0" layoutX="676.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Count_Objects/next_button.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="126.0" prefHeight="288.0" prefWidth="538.0" styleClass="pane_border1" stylesheets="@../FXMLDocument.css">
+         <children>
+            <Label layoutX="231.0" text="Level 2" textFill="#eb7004">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Pane layoutX="230.0" layoutY="191.0" prefHeight="91.0" prefWidth="95.0" />
+            <Label layoutX="125.0" layoutY="35.0" text="Drag The Right  Symbol In This Question" textFill="#eb7004">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="103.0" fitWidth="133.0" layoutX="59.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/numbers/5_b.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="95.0" fitWidth="95.0" layoutX="382.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/numbers/9_g.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="222.0" layoutY="90.0" prefHeight="111.0" prefWidth="95.0" styleClass="pane_border1" stylesheets="@../FXMLDocument.css">
+               <children>
+                  <ImageView fx:id="resultimg" fitHeight="82.0" fitWidth="78.0" layoutX="20.0" layoutY="15.0" onDragDropped="#result_image_frag_dropped" onDragOver="#resultimage_drag_over" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imgs/symbols/pngkey.com-red-x-mark-png-612559.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <ImageView fx:id="img1" fitHeight="122.0" fitWidth="158.0" layoutX="161.0" layoutY="377.0" onDragDetected="#img1_drag_detected" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/more_than_200px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img3" fitHeight="111.0" fitWidth="103.0" layoutX="464.0" layoutY="386.0" onDragDetected="#img3_drag_detected" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/less_than_80px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img2" fitHeight="95.0" fitWidth="151.0" layoutX="317.0" layoutY="390.0" onDragDetected="#img2_drag_detected" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/equal_sign_96px.png" />
+         </image>
+      </ImageView>
+      <Button mnemonicParsing="false" onAction="#go_back" prefHeight="54.0" prefWidth="103.0" styleClass="button_style" stylesheets="@../FXMLDocument.css" text="Go Back To Main Page" textFill="#eb7004" wrapText="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <style>
+            -fx-background-radius: 10px;
+        </style>
+      </Button>
+      <Label fx:id="Label_Error" layoutX="180.0" layoutY="305.0" textFill="#07632d">
+         <font>
+            <Font name="System Bold Italic" size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
